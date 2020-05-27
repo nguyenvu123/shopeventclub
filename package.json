@@ -1,0 +1,12 @@
+{
+  "name": "starter-project-example-name",
+  "version": "1.1.1",
+  "scripts": {
+    "ouragan": "node node_modules/@fidesioparis/ouragan/ouragan.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fidesioparis/ouragan": "^1.1.1",
+    "select2": "^4.0.13"
+  }
+}

@@ -1,0 +1,40 @@
+{% extends '../layout.twig' %}
+
+{% block htmlclass %}layout-default-html{% endblock %}
+{% block bodyclass %}layout-default{% endblock %}
+
+{% if attribute(ouragan, 'include_once_css') is defined %}
+    {{ ouragan.include_once_css({
+        src: 'public/assets/css/layouts/default.css',
+        priority: 4,
+        cache: random,
+        media: 'not print',
+        target: 'beforebody',
+        inline: false
+    }) }}
+{% endif %}
+
+{% if attribute(ouragan, 'include_once_js') is defined %}
+    {{ ouragan.include_once_js({
+        src: 'public/assets/js/layouts/default.js',
+        priority: 4,
+        cache: random,
+        target: 'afterbody',
+        inline: false
+    }) }}
+{% endif %}
+
+{% block header %}
+    {% include '../includes/header.twig' %}
+{% endblock %}
+
+{% block content %}
+    {{ parent() }}
+    <div class="wrapper clearfix">
+        {% block content_inner %}{% endblock %}
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include '../includes/footer.twig' %}
+{% endblock %}

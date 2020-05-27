@@ -1,0 +1,16 @@
+@import '../includes/variables';
+
+.block-banner {
+    height: 700px;
+    padding: 50px 0;
+
+    .content {
+        max-width: 693px;
+    }
+
+    .group-dropdown {
+        position: absolute;
+        top: 50px;
+        right: 0;
+    }
+}
