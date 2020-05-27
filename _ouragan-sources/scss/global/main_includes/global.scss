@@ -1,34 +1,56 @@
 .clearfix {
-  @include clearfix;
+    @include clearfix;
 }
 
 body {
-  font-family: $font-1; //Default font family
-  color: $textcolor-1; //Default text color
-  letter-spacing: normal; //Default letter spacing
-  font-size: 16px; //Default font size
-  line-height: 1.15; //Default line height
-  font-weight: 400; //Default font-weight
-  background: #fff; //Default background
+    font-family: $font-1; //Default font family
+    color: $textcolor-1; //Default text color
+    letter-spacing: normal; //Default letter spacing
+    font-size: 16px; //Default font size
+    line-height: 1.15; //Default line height
+    font-weight: 400; //Default font-weight
+    background: #fff; //Default background
 }
 
 .title-large {
-  font-size: 55px;
-  line-height: 60px;
+    font-size: 55px;
+    line-height: 60px;
 }
 
 .title {
-  font-size: 30px;
-  line-height: 38px;
+    font-size: 30px;
+    line-height: 38px;
+}
+.title-small {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.title-item {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .tag {
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 5px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 15px;
 }
 
 .bg {
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 38px;
+}
+.center {
+    text-align: center;
 }
