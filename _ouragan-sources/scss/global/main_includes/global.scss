@@ -40,6 +40,8 @@ body {
     font-size: 12px;
     text-transform: uppercase;
     line-height: 15px;
+    padding: 5px 10px;
+    transition: all .3s;
 }
 
 .bg {
@@ -47,10 +49,6 @@ body {
     background-repeat: no-repeat;
 }
 
-h2 {
-    font-size: 30px;
-    line-height: 38px;
-}
 .center {
     text-align: center;
 }

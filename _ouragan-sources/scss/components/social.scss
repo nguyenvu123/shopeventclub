@@ -1,0 +1,18 @@
+.social {
+    display: flex;
+
+    p {
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        margin-left: 10px;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+}

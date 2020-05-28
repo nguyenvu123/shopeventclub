@@ -1,0 +1,80 @@
+@import '../../includes/variables';
+@import '../../includes/mixins';
+
+#footer {
+    background-color: $orange;
+    padding: 40px 0;
+
+    .title-small {
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .list-instagram {
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:after {
+            content : '';
+            height: 1px;
+            background-color: $black;
+            position: absolute;
+            bottom: 0;
+            left: -70px;
+            right: -70px;
+        }
+    }
+
+    .bottom-footer {
+        .col-left {
+            .info {
+                margin-left: 20px;
+
+                .label {
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                }
+
+                .form-group {
+                    position: relative;
+                    max-width: 280px;
+                    margin-bottom: 20px;
+
+                    input {
+                        width: 100%;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid $black;
+                    }
+
+                    button {
+                        @include positionRightMiddle(0);
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+
+        .col-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .menu-footer {
+                li {
+                    font-size: 14px;
+                    line-height: 14px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .copy-right {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}

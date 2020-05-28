@@ -1,0 +1,20 @@
+@import '../includes/variables';
+@import '../includes/mixins';
+
+.block-category {
+    padding: 100px 0;
+
+    .wrap-tag {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list-tag {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            margin-right: 30px;
+        }
+    }
+}

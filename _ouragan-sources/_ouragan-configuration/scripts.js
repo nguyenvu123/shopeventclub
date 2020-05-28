@@ -20,6 +20,7 @@ var global = [
                 'node_modules/jquery/dist/jquery.min.js',
                 '_ouragan-sources/js/global/**/*.js',
                 'node_modules/select2/dist/js/select2.min.js',
+                'node_modules/slick-carousel/slick/slick.js',
             ],
 
             /* Include Modernizr tests builds at the beginning of the script if feature-detects is filled. */
