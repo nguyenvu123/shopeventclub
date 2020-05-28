@@ -25,10 +25,17 @@
         });
     }
 
+    function menu() {
+        $('.icon-menu').click(function () {
+           alert("343434");
+        });
+    }
+
 
     $(document).ready(function () {
         pinHeader();
         dropdown();
+        menu();
     });
 
 

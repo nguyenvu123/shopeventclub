@@ -2,35 +2,33 @@
     .wrapper-small {
         background: $grey1;
         padding: 50px 0;
-        .title-small {
-            margin-bottom: 30px;
-        }
-        .row {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .item {
-                max-width: 280px;
-                .info {
-                    background: white;
-                    padding: 20px;
-                }
-                &:nth-child(1) {
-                    .tag {
-                        color: $orange;
-                    }
-                }
-                &:nth-child(2) {
-                    .tag {
-                        color: $yellow;
-                    }
-                }
-                &:nth-child(3) {
-                    .tag {
-                        color: $orange;
-                    }
-                }
+    }
+
+    .title-small {
+        margin-bottom: 30px;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .item {
+            max-width: 280px;
+
+            .info {
+                background: white;
+                padding: 20px;
             }
         }
     }
+    &.include-items-category {
+        .item {
+            max-width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
 }

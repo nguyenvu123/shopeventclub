@@ -1,0 +1,15 @@
+.pagination {
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            &.active {
+                border: 1px solid $black;
+                border-radius: 8px;
+            }
+            padding: 4px 4px;
+            font-size: 9px;
+            margin: 0 5px;
+        }
+    }
+}
