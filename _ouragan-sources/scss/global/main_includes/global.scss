@@ -9,7 +9,7 @@ body {
     line-height: 1.15; //Default line height
     font-weight: 400; //Default font-weight
     background: #fff; //Default background
-    font-family: $font-1;
+    font-family: $font-2;
 }
 
 .title-large {
@@ -26,15 +26,28 @@ body {
     font-size: 14px;
     line-height: 17px;
 }
+.title-articles {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.description-articles {
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+}
 
 .title-item {
     font-size: 16px;
     line-height: 20px;
+    font-weight: bold;
 }
 
 .description {
     font-size: 16px;
     line-height: 20px;
+    font-style: italic;
 }
 
 .tag {

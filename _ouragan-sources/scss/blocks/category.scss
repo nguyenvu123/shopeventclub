@@ -2,12 +2,15 @@
 @import '../includes/mixins';
 
 .block-category {
-    padding: 100px 0;
-
+    padding-top: 75px;
+    margin-bottom: 119px;
+    .title {
+        margin-bottom: 30px;
+    }
     .wrap-tag {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 80px;
+        margin-bottom: 75px;
     }
 
     .list-tag {

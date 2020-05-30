@@ -27,11 +27,18 @@
         });
     }
 
+    function search () {
+        $('.include-search img').click(function () {
+            $('.input-saarch').toggleClass('active');
+        });
+    }
+
 
     $(document).ready(function () {
         pinHeader();
         dropdown();
         menu();
+        search();
     });
 
 

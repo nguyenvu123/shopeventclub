@@ -1,11 +1,24 @@
 .block-shop-event {
-    margin-bottom: 40px;
+    &.events {
+        margin-bottom: 200px;
+    }
     .wrapper {
+        border-bottom: 0.5px solid $black;
+        padding-bottom: 40px;
+        .image-text {
+            padding-top: 35px;
+            margin-bottom: 40px;
+            &.shop {
+                border-top: 0.5px solid $black;
+            }
+            img {
+                margin: 0 auto;
+            }
+        }
         h2 {
             margin-bottom: 30px;
         }
-        border-bottom: 0.5px solid black;
-        padding-bottom: 40px;
+
         .item {
             .title-item {
                 padding-top: 15px;
