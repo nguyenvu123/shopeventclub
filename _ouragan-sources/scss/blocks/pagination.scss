@@ -1,7 +1,9 @@
 .pagination {
+    position: relative;
     ul {
         display: flex;
         justify-content: center;
+        align-items: center;
         li {
             &.active {
                 border: 1px solid $black;
@@ -11,5 +13,10 @@
             font-size: 9px;
             margin: 0 5px;
         }
+    }
+    .image-right {
+        position: absolute;
+        right: 0;
+        top: -15px;
     }
 }

@@ -3,13 +3,13 @@
 }
 
 body {
-    font-family: $font-1; //Default font family
     color: $textcolor-1; //Default text color
     letter-spacing: normal; //Default letter spacing
     font-size: 16px; //Default font size
     line-height: 1.15; //Default line height
     font-weight: 400; //Default font-weight
     background: #fff; //Default background
+    font-family: $font-1;
 }
 
 .title-large {
@@ -20,6 +20,7 @@ body {
 .title {
     font-size: 30px;
     line-height: 38px;
+    font-family: $font-2;
 }
 .title-small {
     font-size: 14px;
@@ -40,7 +41,7 @@ body {
     font-size: 12px;
     text-transform: uppercase;
     line-height: 15px;
-    padding: 5px 10px;
+    padding: 9px 15px;
     transition: all .3s;
 }
 
@@ -56,4 +57,57 @@ body {
 
 .center {
     text-align: center;
+}
+
+.box-newsletter {
+    background-color: $orange;
+    padding: 14px 15px;
+    width: 280px;
+
+    .title-dropdown {
+        font-size: 12px;
+        text-transform: uppercase;
+
+        &:after {
+            content: '';
+
+        }
+    }
+
+    .dropdown {
+        display: none;
+
+        p {
+            font-size: 12px;
+            font-family: $font-3;
+            padding: 15px 0;
+        }
+    }
+
+    .btn {
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+
+.block-breadscrums {
+    margin: 15px 0;
+}
+
+.category-date {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    .category {
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+
+    .date {
+        margin-right: 20px;
+    }
 }

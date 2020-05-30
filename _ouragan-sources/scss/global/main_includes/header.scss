@@ -1,0 +1,39 @@
+#header {
+    min-height: 80px;
+
+    .wrapper-large {
+        &.top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            border-bottom: 1px solid;
+        }
+
+        .left {
+            display: flex;
+
+            .icon-menu {
+                display: inline-block;
+            }
+
+            img {
+                display: inline-block;
+            }
+        }
+        .right {
+            display: flex;
+            .icon-search-user {
+                margin-right: 40px;
+            }
+        }
+
+        .logo {
+            display: block;
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            transform: translate(50%, -50%);
+        }
+    }
+}

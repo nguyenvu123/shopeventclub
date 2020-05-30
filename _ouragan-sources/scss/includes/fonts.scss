@@ -1,22 +1,166 @@
-//@font-face {
-//  font-family: 'fontello';
-//  src: url('../fonts/fontello/fontello.eot?#{$random}');
-//  src: url('../fonts/fontello/fontello.woff2?#{$random}') format('woff2'), // sass-lint:disable-line no-duplicate-properties
-//  url('../fonts/fontello/fontello.woff?#{$random}') format('woff'),
-//  url('../fonts/fontello/fontello.ttf?#{$random}') format('truetype'),
-//  url('../fonts/fontello/fontello.svg?#{$random}#fontello') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
-//@font-face {
-//  font-family: 'Gotham';
-//  src: url('../fonts/gotham/hinted-Gotham-Book.eot');
-//  src: url('../fonts/gotham/hinted-Gotham-Book.eot?#iefix') format('embedded-opentype'), // sass-lint:disable-line no-duplicate-properties
-//  url('../fonts/gotham/hinted-Gotham-Book.woff2') format('woff2'),
-//  url('../fonts/gotham/hinted-Gotham-Book.woff') format('woff'),
-//  url('../fonts/gotham/hinted-Gotham-Book.ttf') format('truetype'),
-//  url('../fonts/gotham/hinted-Gotham-Book.svg#Gotham-Book') format('svg');
-//  font-weight: 300;
-//  font-style: normal;
-//  font-display: fallback;
-//}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?6qdhw8');
+    src:  url('../fonts/icomoon.eot?6qdhw8#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?6qdhw8') format('truetype'),
+    url('../fonts/icomoon.woff?6qdhw8') format('woff'),
+    url('../fonts/icomoon.svg?6qdhw8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^='icon-'], [class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: '\e900';
+}
+.icon-arrowdown:before {
+    content: '\e90e';
+}
+.icon-arrowleft:before {
+    content: '\e90f';
+}
+.icon-arrowright:before {
+    content: '\e910';
+}
+.icon-arrowup:before {
+    content: '\e911';
+}
+.icon-mail:before {
+    content: '\e913';
+}
+.icon-in:before {
+    content: '\e917';
+}
+.icon-pictomember:before {
+    content: '\e91b';
+    color: #e6704c;
+}
+.icon-instagram:before {
+    content: '\e90a';
+}
+
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * antique-olive:
+ *   - http://typekit.com/eulas/000000000000000000017952
+ *   - http://typekit.com/eulas/000000000000000000017955
+ *   - http://typekit.com/eulas/000000000000000000017953
+ * antique-olive-compact:
+ *   - http://typekit.com/eulas/00000000000000000001794b
+ *   - http://typekit.com/eulas/00000000000000000001794c
+ * antique-olive-condensed:
+ *   - http://typekit.com/eulas/00000000000000000001794d
+ *   - http://typekit.com/eulas/00000000000000000001794e
+ * antique-olive-nord:
+ *   - http://typekit.com/eulas/00000000000000000001794f
+ *   - http://typekit.com/eulas/000000000000000000017950
+ * ibm-plex-sans:
+ *   - http://typekit.com/eulas/00000000000000003b9b323f
+ *   - http://typekit.com/eulas/00000000000000003b9b323e
+ *   - http://typekit.com/eulas/00000000000000003b9b3245
+ *   - http://typekit.com/eulas/00000000000000003b9b3244
+ * ibm-plex-sans-condensed:
+ *   - http://typekit.com/eulas/00000000000000003b9b2205
+ *   - http://typekit.com/eulas/00000000000000003b9b2206
+ *   - http://typekit.com/eulas/00000000000000003b9b220b
+ *   - http://typekit.com/eulas/00000000000000003b9b220c
+ * psfournier-std:
+ *   - http://typekit.com/eulas/00000000000000003b9b2820
+ *   - http://typekit.com/eulas/00000000000000003b9b2838
+ *   - http://typekit.com/eulas/00000000000000003b9b28ac
+ *   - http://typekit.com/eulas/00000000000000003b9b28fe
+ * psfournier-std-grand:
+ *   - http://typekit.com/eulas/00000000000000003b9b2821
+ *   - http://typekit.com/eulas/00000000000000003b9b2839
+ *   - http://typekit.com/eulas/00000000000000003b9b28ad
+ *   - http://typekit.com/eulas/00000000000000003b9b28ff
+ * psfournier-std-petit:
+ *   - http://typekit.com/eulas/00000000000000003b9b2822
+ *   - http://typekit.com/eulas/00000000000000003b9b283a
+ *   - http://typekit.com/eulas/00000000000000003b9b28ae
+ *   - http://typekit.com/eulas/00000000000000003b9b2900
+ *
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{'last_published':'2020-05-29 15:37:44 UTC'}*/
+
+@import url('https://p.typekit.net/p.css?s=1&k=fln4rls&ht=tk&f=11043.11045.11046.11069.11070.13005.13006.13167.13168.39884.39885.39890.39891.39900.39901.39906.39907.40918.40925.40954.40984.40919.40926.40955.40985.40920.40927.40956.40986&a=22814352&app=typekit&e=css');
+@font-face {
+    font-family:'psfournier-std';
+    src:url('https://use.typekit.net/af/0108cd/00000000000000003b9b2820/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3') format('woff2'),url('https://use.typekit.net/af/0108cd/00000000000000003b9b2820/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3') format('woff'),url('https://use.typekit.net/af/0108cd/00000000000000003b9b2820/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3') format('opentype');
+    font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+    font-family:'psfournier-std';
+    src:url('https://use.typekit.net/af/19c34f/00000000000000003b9b2838/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3') format('woff2'),url('https://use.typekit.net/af/19c34f/00000000000000003b9b2838/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3') format('woff'),url('https://use.typekit.net/af/19c34f/00000000000000003b9b2838/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3') format('opentype');
+    font-display:auto;font-style:italic;font-weight:700;
+}
+
+@font-face {
+    font-family:'psfournier-std';
+    src:url('https://use.typekit.net/af/34f146/00000000000000003b9b28ac/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3') format('woff2'),url('https://use.typekit.net/af/34f146/00000000000000003b9b28ac/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3') format('woff'),url('https://use.typekit.net/af/34f146/00000000000000003b9b28ac/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3') format('opentype');
+    font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+    font-family:'psfournier-std';
+    src:url('https://use.typekit.net/af/485521/00000000000000003b9b28fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3') format('woff2'),url('https://use.typekit.net/af/485521/00000000000000003b9b28fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3') format('woff'),url('https://use.typekit.net/af/485521/00000000000000003b9b28fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3') format('opentype');
+    font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:'psfournier-std-petit';
+    src:url('https://use.typekit.net/af/4f736d/00000000000000003b9b2822/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3') format('woff2'),url('https://use.typekit.net/af/4f736d/00000000000000003b9b2822/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3') format('woff'),url('https://use.typekit.net/af/4f736d/00000000000000003b9b2822/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3') format('opentype');
+    font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+    font-family:'psfournier-std-petit';
+    src:url('https://use.typekit.net/af/f34bf9/00000000000000003b9b283a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3') format('woff2'),url('https://use.typekit.net/af/f34bf9/00000000000000003b9b283a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3') format('woff'),url('https://use.typekit.net/af/f34bf9/00000000000000003b9b283a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3') format('opentype');
+    font-display:auto;font-style:italic;font-weight:700;
+}
+
+@font-face {
+    font-family:'psfournier-std-petit';
+    src:url('https://use.typekit.net/af/e047d7/00000000000000003b9b28ae/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3') format('woff2'),url('https://use.typekit.net/af/e047d7/00000000000000003b9b28ae/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3') format('woff'),url('https://use.typekit.net/af/e047d7/00000000000000003b9b28ae/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3') format('opentype');
+    font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+    font-family:'psfournier-std-petit';
+    src:url('https://use.typekit.net/af/d08b47/00000000000000003b9b2900/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3') format('woff2'),url('https://use.typekit.net/af/d08b47/00000000000000003b9b2900/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3') format('woff'),url('https://use.typekit.net/af/d08b47/00000000000000003b9b2900/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3') format('opentype');
+    font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family: 'Display';
+    src: url('../fonts/SFNSDisplay-Regular.eot');
+    src: url('../fonts/SFNSDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFNSDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/SFNSDisplay-Regular.woff') format('woff'),
+    url('../fonts/SFNSDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

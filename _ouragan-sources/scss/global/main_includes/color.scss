@@ -19,6 +19,14 @@ $category_colors: (
             color: $white;
         }
     }
+
+    .color-#{$name} {
+        color: $color;
+
+        .category {
+            border-right: 1px solid $color;
+        }
+    }
 }
 
 .black {

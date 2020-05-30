@@ -1,0 +1,132 @@
+@import '../includes/variables';
+
+.block-list-post {
+    margin-bottom: 50px;
+
+    .wrapper {
+        max-width: 980px;
+    }
+
+    .list-item {
+        padding-bottom: 30px;
+
+        .item {
+            display: flex;
+            margin-bottom: 50px;
+
+            .image {
+                width: 380px;
+                margin-right: 50px;
+                flex-shrink: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .info {
+                max-width: 480px;
+                position: relative;
+
+                .icon-right {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+                .title {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-family: $font-2;
+                    font-weight: 700;
+                }
+
+                .sub-title {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-family: $font-2;
+                    font-weight: 400;
+                    font-style: italic;
+                    margin-bottom: 20px;
+                }
+
+                .description {
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin-bottom: 30px;
+                    font-family: $font-2;
+                    font-weight: 400;
+                }
+
+                .author {
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin-bottom: 30px;
+                }
+
+
+            }
+        }
+    }
+
+    .post-recently {
+        .top-recently {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .item {
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                text-transform: uppercase;
+
+                &:first-child {
+                    img {
+                        margin-right: 30px;
+                        transform: rotate(180deg);
+                    }
+                }
+                &:last-child {
+                    img {
+                        margin-left: 30px;
+                    }
+                }
+
+            }
+        }
+
+        .list-item-recently {
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                max-width: 280px;
+
+                .image {
+                    margin-bottom: 10px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .description {
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding-right: 30px;
+                    position: relative;
+                    font-family: $font-2;
+                    font-weight: 400;
+                    font-style: italic;
+
+                    span {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
