@@ -1,0 +1,21 @@
+.content-post {
+    p, img {
+        width: 70%;
+        float: right;
+        padding-bottom: 20px;
+        &.left {
+            width: 30%;
+            float: left;
+            text-align: right;
+            padding-right: 30px;
+
+        }
+    }
+    p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .image-full {
+        width: 100%;
+    }
+}

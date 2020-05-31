@@ -17,7 +17,7 @@ var global = [
             /* Most likely node_modules or includes stuffs */
             /* Order of inclusion will be respected */
             scripts: [
-                'node_modules/jquery/dist/jquery.min.js',
+                // 'node_modules/jquery/dist/jquery.min.js',
                 '_ouragan-sources/js/global/**/*.js',
                 'node_modules/select2/dist/js/select2.min.js',
                 'node_modules/slick-carousel/slick/slick.js',

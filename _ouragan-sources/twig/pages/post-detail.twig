@@ -29,23 +29,13 @@
 {% endblock %}
 
 {% block content %}
-    <div class="block-breadscrums">
-        <div class="wrapper-large">
-            <ul class="breadscrums">
-                <li>
-                    <a href="">home</a>
-                </li>
 
-                <li>
-                    <a href="">mag</a>
-                </li>
+    {% include '@blocks/banner-post-detail.twig' %}
+    {% include '@blocks/breadcrumb-deteail.twig' %}
+    {% include '@blocks/post-top-info.twig' %}
+    {% include '@blocks/content-post.twig' %}
+    {% include '@blocks/content-post-bottom.twig' %}
+    {% include '@blocks/post-recently.twig' %}
 
-                <li>
-                    <a href="">garage</a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
-    {% include '@blocks/banner-small.twig' %}
 {% endblock %}

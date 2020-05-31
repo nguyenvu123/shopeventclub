@@ -21,25 +21,35 @@
                 display: inline-block;
             }
         }
+
         .right {
             display: flex;
+
             .icon-search-user {
+                position: relative;
                 margin-right: 40px;
                 display: flex;
+
                 .include-search {
                     display: flex;
+
                     .include-input-search {
                         overflow: hidden;
                         width: 180px;
                         position: relative;
-                        .input-saarch {
-                            height: 22px;
-                            transition: all 1s;
-                            width: 180px;
-                            border-bottom: 1px solid $black;
-                            position: absolute;
-                            transform: translateX(180px);
-                            &.active {
+                        .bootstrap-tagsinput {
+                                width: 100% !important;
+                                border-bottom: 0.5px solid $black;
+                                transform: translateX(180px);
+                                transition: all 1s;
+                                min-height: 22px;
+
+                            input {
+                                position: absolute;
+                            }
+                        }
+                        &.active {
+                            .bootstrap-tagsinput {
                                 transform: translateX(0);
                             }
                         }
@@ -48,6 +58,42 @@
                     img {
                         margin-right: 20px;
                     }
+
+                }
+                .search-result {
+                    overflow: hidden;
+                    position: absolute;
+                    width: 330px;
+                    left: -118px;
+                    top: 35px;
+                    .box {
+                        background-color: $white;
+                        transform: translateY(-377px);
+                        transition: all 1s;
+                        &.active {
+                            transform: translateY(0);
+                        }
+                    }
+                    .number {
+                        position: absolute;
+                        left: 115px;
+
+                    }
+                    .include-items {
+                        padding: 60px 20px 20px;
+                        .item {
+                            display: flex;
+                            margin-bottom: 10px;
+                            .image {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    .inlude-btn {
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
                 }
 
             }

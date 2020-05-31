@@ -22,16 +22,19 @@ body {
     line-height: 38px;
     font-family: $font-2;
 }
+
 .title-small {
     font-size: 14px;
     line-height: 17px;
 }
+
 .title-articles {
     font-size: 20px;
     line-height: 24px;
     padding-bottom: 5px;
     font-weight: bold;
 }
+
 .description-articles {
     font-size: 20px;
     line-height: 24px;
@@ -74,30 +77,54 @@ body {
 
 .box-newsletter {
     background-color: $orange;
-    padding: 14px 15px;
+
     width: 280px;
 
     .title-dropdown {
+        cursor: pointer;
+        position: relative;
         font-size: 12px;
         text-transform: uppercase;
-
+        padding: 14px 15px;
         &:after {
             content: '';
 
         }
+
+        &:after {
+            transition: all 1s;
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-right-style: solid;
+            border-right-width: 2px;
+            content: '';
+            display: inline-block;
+            height: 12px;
+            top: 50%;
+            width: 12px;
+            position: absolute;
+            left: 88%;
+            transform: translateY(-70%) rotate(45deg);
+        }
+
+        &.active {
+            &:after {
+                transform: translateY(-70%) rotate(225deg);
+            }
+        }
     }
 
     .dropdown {
+        padding: 0 15px 15px 15px;
         display: none;
-
         p {
             font-size: 12px;
             font-family: $font-3;
             padding: 15px 0;
         }
     }
-
     .btn {
+
         &:hover {
             color: $orange;
         }
