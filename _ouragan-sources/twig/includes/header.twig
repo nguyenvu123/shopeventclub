@@ -17,7 +17,7 @@
             <div class="icon-search-user">
                 <div class="include-search">
                     <div class="include-input-search">
-                        <input type="text" class="search-input form-control" value="" data-role="tagsinput" placeholder="Rechercher">
+                        <input type="text" class="search-input" value="" name="tags" placeholder="Rechercher" />
                     </div>
                     <img src="assets/images/search.png" alt="">
                 </div>
@@ -135,5 +135,13 @@
             </div>
         </div>
     </div>
+    <script>
+        var t1 = tagger(document.querySelector('[name="tags"]'), {
+            allow_duplicates: false,
+            allow_spaces: true,
+            completion: {list: ['foo', 'bar', 'baz']}
+        });
+
+    </script>
 
 </header>
