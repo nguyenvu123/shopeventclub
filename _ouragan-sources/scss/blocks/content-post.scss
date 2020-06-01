@@ -1,13 +1,33 @@
 .content-post {
-    p, img {
-        width: 70%;
+    .wrapper-content {
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .image-right-icon {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(50%);
+        }
+    }
+    h4 {
+        font-family: $font-2;
+        font-weight: bold;
+    }
+    p, img, h4 {
+        width: 65%;
         float: right;
-        padding-bottom: 20px;
+        padding-bottom: 22px;
         &.left {
-            width: 30%;
+            width: 35%;
             float: left;
             text-align: right;
             padding-right: 30px;
+            font-style: italic;
 
         }
     }
@@ -18,4 +38,18 @@
     .image-full {
         width: 100%;
     }
+    img {
+        padding-bottom: 10px;
+    }
+    .title-image {
+        font-size: 9px;
+        font-weight: bold;
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+
 }

@@ -11,14 +11,17 @@
             ul {
                 display: flex;
                 li {
-                    margin-right: 10px;
+                    a {
+                        font-family: $font-2;
+                        font-weight: bold;
+                    }
                 }
             }
         }
         .box-newsletter {
             position: absolute;
-            right: 0;
             top: 0;
+            right: 70px;
         }
     }
 }

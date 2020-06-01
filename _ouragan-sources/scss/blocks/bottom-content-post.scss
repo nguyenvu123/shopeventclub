@@ -1,42 +1,94 @@
 .block-top-info-post {
-    padding-top: 80px;
+    padding-top: 73px;
+
     .name {
-        margin-bottom: 30px;
+        font-family: $font-2;
+        margin-bottom: 17px;
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 1px;
+
     }
     .date {
-        margin: 50px 0;
+        margin: 25px 0 51px;
+        font-family: $font-2;
+        font-size: 12px;
+        font-weight: bold;
+        span {
+            margin-right: 20px;
+            letter-spacing: 1px;
+        }
+
     }
-    .title {
-        margin-bottom: 30px;
+    .top-social {
+        font-family: $font-2;
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 15px;
     }
+    .social {
+        justify-content: center;
+        li {
+            margin: 0 10px;
+        }
+    }
+    .title-box {
+        .title {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .sub-title {
+            font-style: italic;
+            font-size: 30px;
+        }
+    }
+
     .excerpt {
         font-size: 20px;
         line-height: 28px;
-        margin: 30px 0;
+        margin: 71px 0 94px;
+        font-style: italic;
     }
 }
 
 
 .bottom-content-post {
     clear: both;
+    margin-bottom: 75px;
     .box-info {
-        width: 70%;
+        width: 65%;
         float: right;
         .social {
             a {
-                margin-right: 30px;
+                margin-right: 10px;
             }
         }
         .btn {
-            margin: 20px 0;
+            margin: 15px 15px 15px 0px;
+            font-family: $font-2;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+        }
+        .two-btn {
+            margin-top: 10px;
         }
     }
     .list-tags-text {
+        margin-bottom: 20px;
         ul {
             display: flex;
+            flex-wrap: wrap;
             li {
-                margin-right: 20px;
+                margin-right: 27px;
+                font-size: 12px;
+                opacity: .5;
             }
         }
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
     }
 }

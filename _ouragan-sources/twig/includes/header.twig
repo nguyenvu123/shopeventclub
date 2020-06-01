@@ -17,11 +17,11 @@
             <div class="icon-search-user">
                 <div class="include-search">
                     <div class="include-input-search">
-                        <input type="text" class="search-input" value="" name="tags" placeholder="Rechercher" />
+                        <input type="text" class="search-input form-control" value="" data-role="tagsinput" placeholder="Rechercher">
                     </div>
-                    <img src="assets/images/search.png" alt="">
+                    <span class="icon-search"></span>
                 </div>
-                <a href=""><i class="icon-pictomember"></i></a>
+                <a href=""><i class="icon-user"></i></a>
 
                 <div class="search-result">
                     <div class="box">
@@ -44,8 +44,8 @@
                                     <img src="assets/images/search1.png" alt="">
                                 </div>
                                 <div class="info">
-                                    <p class="title-item">S'évader en confinement</p>
-                                    <p class="description">7 films italiens à voir absolument</p>
+                                    <p class="title-item">Pastore, rue Bergère</p>
+                                    <p class="description">La bistronomie à l’italienne</p>
                                 </div>
                             </div>
                             <div class="item">
@@ -53,8 +53,8 @@
                                     <img src="assets/images/search1.png" alt="">
                                 </div>
                                 <div class="info">
-                                    <p class="title-item">S'évader en confinement</p>
-                                    <p class="description">7 films italiens à voir absolument</p>
+                                    <p class="title-item">Il me semble que Roger est en Italie</p>
+                                    <p class="description">Les trésors de Rome en Automne</p>
                                 </div>
                             </div>
                             <div class="inlude-btn">
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="language">
-                <a href="#">FR</a>
+                <a href="#" class="active">FR</a>
                 /
                 <a href="#">EN</a>
             </div>
@@ -135,13 +135,4 @@
             </div>
         </div>
     </div>
-    <script>
-        var t1 = tagger(document.querySelector('[name="tags"]'), {
-            allow_duplicates: false,
-            allow_spaces: true,
-            completion: {list: ['foo', 'bar', 'baz']}
-        });
-
-    </script>
-
 </header>

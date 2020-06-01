@@ -3,13 +3,13 @@
 }
 
 body {
-    color: $textcolor-1; //Default text color
+    color: $black; //Default text color
     letter-spacing: normal; //Default letter spacing
     font-size: 16px; //Default font size
     line-height: 1.15; //Default line height
     font-weight: 400; //Default font-weight
     background: #fff; //Default background
-    font-family: $font-2;
+    font-family: $font-1;
 }
 
 .title-large {
@@ -20,18 +20,18 @@ body {
 .title {
     font-size: 30px;
     line-height: 38px;
-    font-family: $font-2;
 }
 
 .title-small {
     font-size: 14px;
     line-height: 17px;
+    font-family: $font-2;
+    font-weight: bold;
 }
 
 .title-articles {
     font-size: 20px;
     line-height: 24px;
-    padding-bottom: 5px;
     font-weight: bold;
 }
 
@@ -57,8 +57,11 @@ body {
     font-size: 12px;
     text-transform: uppercase;
     line-height: 15px;
-    padding: 9px 15px;
+    padding: 9px 18px;
     transition: all .3s;
+    font-family: $font-2;
+    font-weight: bold;
+    letter-spacing: .5px;
 }
 
 .text-top-banner {
@@ -85,7 +88,10 @@ body {
         position: relative;
         font-size: 12px;
         text-transform: uppercase;
-        padding: 14px 15px;
+        padding: 16px 19px 12px;
+        font-family: "Display";
+        font-weight: bold;
+        letter-spacing: 1px;
         &:after {
             content: '';
 
@@ -99,9 +105,9 @@ body {
             border-right-width: 2px;
             content: '';
             display: inline-block;
-            height: 12px;
+            height: 8px;
             top: 50%;
-            width: 12px;
+            width: 8px;
             position: absolute;
             left: 88%;
             transform: translateY(-70%) rotate(45deg);
@@ -120,7 +126,8 @@ body {
         p {
             font-size: 12px;
             font-family: $font-3;
-            padding: 15px 0;
+            padding: 0 0 15px;
+            line-height: 18px;
         }
     }
     .btn {
@@ -132,7 +139,7 @@ body {
 }
 
 .block-breadscrums {
-    margin: 15px 0;
+    margin: 9px 0;
 }
 
 .category-date {
@@ -141,6 +148,9 @@ body {
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-family: $font-2;
+    font-weight: bold;
+    letter-spacing: 1px;
 
     .category {
         padding-right: 20px;
@@ -149,5 +159,41 @@ body {
 
     .date {
         margin-right: 20px;
+    }
+}
+
+.icon-search {
+    width: 21px;
+    height: 21px;
+    background-image: url( '../images/search.svg');
+    background-repeat: no-repeat;
+    background-size: 21px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icon-user {
+    width: 21px;
+    height: 23px;
+    background-image: url( '../images/pictomember-off.svg');
+    background-repeat: no-repeat;
+    background-size: 21px;
+    display: inline-block;
+
+    &.on {
+        background-image: url( '../images/pictomember-on.svg');
+    }
+}
+
+.icon-bookmark {
+    width: 11px;
+    height: 17px;
+    background-image: url( '../images/bookmark.svg');
+    background-repeat: no-repeat;
+    background-size: 11px;
+    display: inline-block;
+
+    &.on {
+        background-image: url( '../images/bookmark-on.svg');
     }
 }

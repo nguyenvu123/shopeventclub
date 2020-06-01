@@ -28,31 +28,34 @@
     }
 
     function search() {
-        $('.include-search img').click(function () {
+        $('.include-search .icon-search').click(function () {
             $('.include-input-search').toggleClass('active');
-            $('.search-result .box').removeClass('active');
+            $('.search-result').removeClass('active');
         });
 
-        // $('.bootstrap-tagsinput input').tagsinput({
-        //     trimValue: true,
-        //     confirmKeys: [13, 44, 32],
-        //     focusClass: 'my-focus-class'
-        // });
-        //
-        // $('.bootstrap-tagsinput input').on('focus', function() {
-        //     $(this).closest('.bootstrap-tagsinput').addClass('has-focus');
-        // }).on('blur', function() {
-        //     $(this).closest('.bootstrap-tagsinput').removeClass('has-focus');
-        // });
+        $('input').tagsinput({
+            maxTags: 2,
+            trimValue: true,
+            focusClass: 'my-focus-class',
+            // confirmKeys: [13, 44]
 
+        });
+
+        $('.bootstrap-tagsinput input').on('focus', function() {
+            $(this).closest('.bootstrap-tagsinput').addClass('has-focus');
+        }).on('blur', function() {
+            $(this).closest('.bootstrap-tagsinput').removeClass('has-focus');
+            if(!$(this).closest('.bootstrap-tagsinput').hasClass('has-focus')) {
+                // $('.search-result .box').removeClass('active');
+            }
+        });
 
         $('.bootstrap-tagsinput input').keypress(function(event){
 
             var keycode = (event.keyCode ? event.keyCode : event.which);
             if(keycode == '13'){
-                $('.search-result .box').addClass('active');
+                $('.search-result').addClass('active');
             }
-            event.stopPropagation();
         });
     }
 

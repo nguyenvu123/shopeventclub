@@ -2,12 +2,15 @@
     margin-bottom: 150px;
     .wrapper-small {
         background: $grey1;
-        padding: 50px 0;
+        padding: 44px 0 26px 0;
     }
 
     .title-small {
         margin-bottom: 30px;
         text-transform: uppercase;
+        margin-bottom: 42px;
+        letter-spacing: 1.2px;
+
     }
 
     .row {
@@ -20,11 +23,19 @@
             margin-bottom: 35px;
 
             .info {
+                padding: 6px 18px 15px 16px;
                 background: white;
-                padding: 15px;
                 .tag {
-                    padding-bottom: 15px;
+                    padding-bottom: 13px;
                     padding-left: 0;
+                    span {
+                        &:nth-child(1) {
+                            padding-right: 20px;
+                        }
+                        &:nth-child(2) {
+                            padding: 0 17px;
+                        }
+                    }
                 }
             }
         }
@@ -41,6 +52,11 @@
                 .info {
                     padding: 10px 20px 20px 0px;
                 }
+            }
+        }
+        .block-banner {
+            &.small {
+                margin: 20px 0 75px;
             }
         }
 

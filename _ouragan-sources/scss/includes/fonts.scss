@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?6qdhw8');
-    src:  url('../fonts/icomoon.eot?6qdhw8#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?6qdhw8') format('truetype'),
-    url('../fonts/icomoon.woff?6qdhw8') format('woff'),
-    url('../fonts/icomoon.svg?6qdhw8#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?o426gi');
+    src:  url('../fonts/icomoon.eot?o426gi#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?o426gi') format('truetype'),
+    url('../fonts/icomoon.woff?o426gi') format('woff'),
+    url('../fonts/icomoon.svg?o426gi#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
 }
 
-[class^='icon-'], [class*=' icon-'] {
+[class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -25,34 +25,50 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-share:before {
+    content: "\e903";
+}
+.icon-slider-right:before {
+    content: "\e904";
+}
 .icon-facebook:before {
-    content: '\e900';
+    content: "\e900";
+    font-size: 17px;
 }
 .icon-arrowdown:before {
-    content: '\e90e';
+    content: "\e90e";
 }
 .icon-arrowleft:before {
-    content: '\e90f';
+    content: "\e90f";
 }
 .icon-arrowright:before {
-    content: '\e910';
+    content: "\e910";
 }
 .icon-arrowup:before {
-    content: '\e911';
+    content: "\e911";
 }
 .icon-mail:before {
-    content: '\e913';
+    content: "\e913";
 }
 .icon-in:before {
-    content: '\e917';
+    content: "\e917";
+    font-size: 17px;
 }
 .icon-pictomember:before {
-    content: '\e91b';
+    content: "\e91b";
     color: #e6704c;
 }
 .icon-instagram:before {
-    content: '\e90a';
+    content: "\e90a";
+    font-size: 17px;
 }
+
+.icon-twitter:before {
+    content: "\ea96";
+    color: #3A3A3A;
+    font-size: 19px;
+}
+
 
 
 @import url('https://p.typekit.net/p.css?s=1&k=fln4rls&ht=tk&f=11043.11045.11046.11069.11070.13005.13006.13167.13168.39884.39885.39890.39891.39900.39901.39906.39907.40918.40925.40954.40984.40919.40926.40955.40985.40920.40927.40956.40986&a=22814352&app=typekit&e=css');
@@ -106,11 +122,22 @@
 
 @font-face {
     font-family: 'Display';
-    src: url('../fonts/SFNSDisplay-Regular.eot');
-    src: url('../fonts/SFNSDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/SFNSDisplay-Regular.woff2') format('woff2'),
-    url('../fonts/SFNSDisplay-Regular.woff') format('woff'),
-    url('../fonts/SFNSDisplay-Regular.ttf') format('truetype');
+    src: url('../fonts/AkkuratLL-Bold.eot');
+    src: url('../fonts/AkkuratLL-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AkkuratLL-Bold.woff2') format('woff2'),
+    url('../fonts/AkkuratLL-Bold.woff') format('woff'),
+    url('../fonts/AkkuratLL-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Display';
+    src: url('../fonts/AkkuratLL-Regular.eot');
+    src: url('../fonts/AkkuratLL-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AkkuratLL-Regular.woff2') format('woff2'),
+    url('../fonts/AkkuratLL-Regular.woff') format('woff'),
+    url('../fonts/AkkuratLL-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

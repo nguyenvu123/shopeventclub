@@ -5,13 +5,29 @@
         justify-content: center;
         align-items: center;
         li {
-            &.active {
-                border: 1px solid $black;
-                border-radius: 8px;
-            }
+            position: relative;
             padding: 4px 4px;
             font-size: 9px;
-            margin: 0 5px;
+            margin: 0 2px;
+            &.active {
+                border: 1px solid #000;
+                border-radius: 14px;
+                position: relative;
+                width: 15px;
+                height: 20px;
+                a {
+                    position: absolute;
+                }
+            }
+            a {
+
+                font-size: 12px;
+                font-family: $font-2;
+                font-weight: bold;
+            }
+            &:last-child {
+                padding-left: 15px;
+            }
         }
     }
     .image-right {

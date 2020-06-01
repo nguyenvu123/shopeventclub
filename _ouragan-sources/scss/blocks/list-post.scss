@@ -8,7 +8,7 @@
     }
 
     .list-item {
-        padding-bottom: 30px;
+        padding-bottom: 56px;
 
         .item {
             display: flex;
@@ -16,7 +16,7 @@
 
             .image {
                 width: 380px;
-                margin-right: 50px;
+                margin-right: 58px;
                 flex-shrink: 0;
 
                 img {
@@ -37,25 +37,20 @@
                 .title {
                     font-size: 20px;
                     line-height: 24px;
-                    font-family: $font-2;
                     font-weight: 700;
                 }
 
                 .sub-title {
                     font-size: 20px;
                     line-height: 24px;
-                    font-family: $font-2;
-                    font-weight: 400;
                     font-style: italic;
-                    margin-bottom: 20px;
+                    margin-bottom: 17px;
                 }
 
                 .description {
                     font-size: 12px;
                     line-height: 18px;
-                    margin-bottom: 30px;
-                    font-family: $font-2;
-                    font-weight: 400;
+                    margin-bottom: 17px;
                 }
 
                 .author {
@@ -63,8 +58,6 @@
                     line-height: 15px;
                     margin-bottom: 30px;
                 }
-
-
             }
         }
     }
