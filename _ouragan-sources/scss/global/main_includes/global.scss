@@ -92,6 +92,7 @@ body {
         font-family: "Display";
         font-weight: bold;
         letter-spacing: 1px;
+
         &:after {
             content: '';
 
@@ -123,6 +124,7 @@ body {
     .dropdown {
         padding: 0 15px 15px 15px;
         display: none;
+
         p {
             font-size: 12px;
             font-family: $font-3;
@@ -130,6 +132,7 @@ body {
             line-height: 18px;
         }
     }
+
     .btn {
 
         &:hover {
@@ -165,7 +168,7 @@ body {
 .icon-search {
     width: 21px;
     height: 21px;
-    background-image: url( '../images/search.svg');
+    background-image: url('../images/search.svg');
     background-repeat: no-repeat;
     background-size: 21px;
     display: inline-block;
@@ -175,25 +178,54 @@ body {
 .icon-user {
     width: 21px;
     height: 23px;
-    background-image: url( '../images/pictomember-off.svg');
+    background-image: url('../images/pictomember-off.svg');
     background-repeat: no-repeat;
     background-size: 21px;
     display: inline-block;
 
     &.on {
-        background-image: url( '../images/pictomember-on.svg');
+        background-image: url('../images/pictomember-on.svg');
     }
 }
 
 .icon-bookmark {
     width: 11px;
     height: 17px;
-    background-image: url( '../images/bookmark.svg');
+    background-image: url('../images/bookmark.svg');
     background-repeat: no-repeat;
     background-size: 11px;
     display: inline-block;
 
     &.on {
-        background-image: url( '../images/bookmark-on.svg');
+        background-image: url('../images/bookmark-on.svg');
     }
+}
+
+.item {
+    position: relative;
+
+    &:hover {
+        .hover-image {
+            background-color: rgb(238, 0, 0);
+            transition: all 0.15s ease-in 0s;
+            opacity: .8;
+        }
+    }
+
+    .image {
+        img {
+            mix-blend-mode: multiply;
+        }
+    }
+}
+.image {
+    position: relative;
+}
+
+.full-link, .hover-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
