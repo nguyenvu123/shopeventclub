@@ -1,5 +1,12 @@
 .block-pour-vous {
     margin-bottom: 150px;
+
+    &.grey {
+        .wrapper-small {
+            background-color: #4A483B;
+        }
+    }
+
     .wrapper-small {
         background: $grey1;
         padding: 44px 0 26px 0;
@@ -19,23 +26,16 @@
         justify-content: center;
 
         .item {
+            z-index: 1;
             max-width: 300px;
             margin-bottom: 35px;
 
             .info {
                 padding: 6px 18px 15px 16px;
                 background: white;
-                .tag {
-                    padding-bottom: 13px;
-                    padding-left: 0;
-                    span {
-                        &:nth-child(1) {
-                            padding-right: 20px;
-                        }
-                        &:nth-child(2) {
-                            padding: 0 17px;
-                        }
-                    }
+
+                .category-date {
+                    padding: 11px 0;
                 }
             }
         }
@@ -58,6 +58,12 @@
             &.small {
                 margin: 20px 0 75px;
             }
+        }
+
+    }
+    &.post {
+        .wrapper-small {
+            background: #4A483B;
         }
 
     }

@@ -33,7 +33,7 @@
         }
 
         .content {
-            max-width: 780px;
+            max-width: 658px;
             margin: 64px auto 0;
         }
 
@@ -50,6 +50,8 @@
 
     .content {
         max-width: 693px;
+        position: relative;
+        z-index: 2;
 
         .title-large {
             margin-bottom: 45px;
@@ -59,6 +61,8 @@
 
     .category-date {
         color: $white;
+        position: relative;
+        z-index: 2;
 
         .category {
             border-right: 1px solid $white;
@@ -69,6 +73,8 @@
         position: absolute;
         top: 50px;
         right: 0;
+        position: relative;
+        z-index: 2;
     }
 
     .box-newsletter {
@@ -76,6 +82,7 @@
         right: 68px;
         top: -10px;
         width: 280px;
+        z-index: 2;
     }
 }
 

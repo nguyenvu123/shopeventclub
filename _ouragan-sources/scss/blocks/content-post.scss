@@ -10,8 +10,12 @@
         .image-right-icon {
             position: absolute;
             top: 50%;
-            right: 0;
+            right: -300px;
             transform: translateY(50%);
+
+            img {
+                width: 108px;
+            }
         }
     }
     h4 {
