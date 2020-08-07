@@ -26,6 +26,8 @@ public/assets/js/pages/home.js.map
 public/assets/js/blocks/wysiwyg-content.js
 public/assets/js/blocks/wysiwyg-content.js.map
 public/assets/images/favicon/
+_ouragan-sources/*
+web/*
 ### Rules from .gitignore-source ###
 node_modules/
 *.pydevproject
