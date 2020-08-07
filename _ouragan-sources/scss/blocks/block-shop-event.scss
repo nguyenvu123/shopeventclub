@@ -1,0 +1,49 @@
+.block-shop-event {
+    &.events {
+        margin-bottom: 200px;
+    }
+
+    &.post-list {
+        margin-bottom: 200px;
+
+        .wrapper {
+            padding-top: 41px;
+            border-top: 1px solid $black;
+        }
+
+        .title-small {
+            margin-bottom: 37px;
+        }
+    }
+
+    .wrapper {
+        border-bottom: 1px solid $black;
+        padding-bottom: 45px;
+        .image-text {
+            padding-top: 35px;
+            margin-bottom: 40px;
+            &.shop {
+                border-top: 0.5px solid $black;
+            }
+            img {
+                margin: 0 auto;
+            }
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .item {
+            .title-item {
+                padding-top: 15px;
+            }
+        }
+    }
+    &.post {
+        margin-bottom: 200px;
+        .wrapper {
+            padding-bottom: 30px;
+        }
+    }
+
+}

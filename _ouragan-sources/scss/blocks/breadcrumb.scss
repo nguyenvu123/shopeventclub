@@ -1,0 +1,27 @@
+.block-breadcrumb {
+    background-color: #4A483B;
+    height: 40px;
+    .wrapper-large {
+        height: 100%;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        .include-breadcrumb {
+            ul {
+                display: flex;
+                li {
+                    a {
+                        font-family: $font-2;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .box-newsletter {
+            position: absolute;
+            top: 0;
+            right: 70px;
+        }
+    }
+}

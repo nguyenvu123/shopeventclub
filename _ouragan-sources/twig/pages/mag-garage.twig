@@ -1,0 +1,51 @@
+{#{% extends '../layouts/default.twig' %}#}
+
+{#{% block htmlclass %}{{ parent() }} mag-garage-html{% endblock %}#}
+{#{% block bodyclass %}{{ parent() }} mag-garage-home{% endblock %}#}
+
+{#{% block title %}Home - {{ parent() }}{% endblock %}#}
+
+{#{% block pre_content %}#}
+    {#<!--#}
+    {#Include this snippet only on the frontpage.#}
+    {#Testing tool: https://search.google.com/structured-data/testing-tool#}
+    {#Documentation: https://developers.google.com/search/docs/data-types/sitelinks-searchbox#}
+    {#-->#}
+    {#<script type='application/ld+json'>#}
+        {#{#}
+            {#"@context": "https://schema.org",#}
+            {#"@type": "WebSite",#}
+            {#"@id": "http://my-website-url.com/#website",#}
+            {#"url": "http://my-website-url.com/",#}
+            {#"name": "Name of the website",#}
+            {#"potentialAction": {#}
+                {#"@type": "SearchAction",#}
+                {#"target": "http://my-website-url.com/?s={search_term_string}",#}
+                {#"query-input": "required name=search_term_string"#}
+            {#}#}
+        {#}#}
+
+    {#</script>#}
+{#{% endblock %}#}
+
+{#{% block content %}#}
+    {#<div class="block-breadscrums">#}
+        {#<div class="wrapper-large">#}
+            {#<ul class="breadscrums">#}
+                {#<li>#}
+                    {#<a href="">home</a>#}
+                {#</li>#}
+
+                {#<li>#}
+                    {#<a href="">mag</a>#}
+                {#</li>#}
+
+                {#<li>#}
+                    {#<a href="">garage</a>#}
+                {#</li>#}
+            {#</ul>#}
+        {#</div>#}
+    {#</div>#}
+
+    {#{% include '@blocks/banner-small.twig' %}#}
+{#{% endblock %}#}

@@ -1,0 +1,59 @@
+.content-post {
+    .wrapper-content {
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .image-right-icon {
+            position: absolute;
+            top: 50%;
+            right: -300px;
+            transform: translateY(50%);
+
+            img {
+                width: 108px;
+            }
+        }
+    }
+    h4 {
+        font-family: $font-2;
+        font-weight: bold;
+    }
+    p, img, h4 {
+        width: 65%;
+        float: right;
+        padding-bottom: 22px;
+        &.left {
+            width: 35%;
+            float: left;
+            text-align: right;
+            padding-right: 30px;
+            font-style: italic;
+
+        }
+    }
+    p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .image-full {
+        width: 100%;
+    }
+    img {
+        padding-bottom: 10px;
+    }
+    .title-image {
+        font-size: 9px;
+        font-weight: bold;
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+
+}

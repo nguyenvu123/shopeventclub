@@ -1,0 +1,58 @@
+$category_colors: (
+        'tous': $black,
+        'gastronomie': $yellow,
+        'style-de-vie': $grey1,
+        'culture': $orange,
+        'voyage': $blue,
+        'garage': $grey,
+        'eros': $pink,
+        'contributeurs': $black,
+);
+
+@each $name, $color in $category_colors {
+    .category-#{$name} {
+        color: $color;
+        border: 1px solid $color;
+
+        &:hover {
+            background-color: $color;
+            color: $white;
+        }
+    }
+
+    .color-#{$name} {
+        color: $color;
+
+        .category {
+            border-right: 1px solid $color;
+        }
+    }
+}
+
+.black {
+    color: $black;
+}
+
+.white {
+    color: $white;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.orange {
+    color: $orange;
+}
+
+.grey {
+    color: $grey;
+}
+
+.blue {
+    color: $blue;
+}
+
+.pink {
+    color: $pink;
+}
